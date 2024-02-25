@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+
+<body>
+
+  <script>
+    /* const product = {
+      name: 'Socks',
+      price: '200'
+    }
+    console.log(typeof product);
+    console.log(product);
+    console.log(product.name);
+    console.log(product.price);
+
+    product.name = 'Cotton Socks';
+    console.log(product);
+
+    product.newProperty = true;
+    console.log(product);
+    delete product.newProperty;
+    console.log(product);
+    */
+
+    /*
+    const product2 = {
+      name: 'Shirt',
+      'delivery-time': '1 Day',
+      rating:{
+        stars: 4.5,
+        count: 87
+      },
+      fun: function function1(){
+        console.log('Function inside an Object.');
+      }
+    }
+    console.log(product2);
+    console.log(product2.name);
+    console.log(product2['name']);
+    console.log(product2['delivery-time']);
+    console.log(product2.rating.stars);
+    console.log(product2.rating.count);
+    product2.fun();
+
+    console.log(typeof console);
+
+    // JS Object to JSON.
+    console.log(JSON.stringify(product2)); // it will never show the Function. 
+
+    // JSON to JS Object.
+    const jsonString = JSON.stringify(product2);
+    console.log(JSON.parse(jsonString));
+
+    // LocalStorage save and get items.
+    localStorage.setItem('message', 'Hello!');
+    console.log(localStorage.getItem('message'));
+   */
+
+    console.log('Hello!'.length);
+    console.log('Hello!'.toUpperCase());
+
+    const object1 = {
+      message: 'Hello'
+    };
+
+    // Object Reference
+    const object2 = object1;
+    object1.message = 'Hello World!';
+    console.log(object1);
+    console.log(object2);
+
+    const object3 = {
+      message: 'Hello World!'
+    };
+    console.log(object3 === object1);
+    console.log(object3 === object2);
+    console.log(object2 === object1);
+
+    // Destructuring
+    const object4 = {
+      message: 'Total Price',
+      price: 799
+    };
+    const { message, price } = object4;
+    console.log(message);
+    console.log(price);
+
+    // Shorthand Property & Shorthand Method
+    const object5 = {
+      // message: message
+      message,
+      // method: function function1(){
+      //   console.log('method');
+      // }
+      method() {
+        console.log('method');
+      }
+    };
+    console.log(object5);
+    object5.method();
+
+
+    // Exercise 8a-8c
+    const product = {
+      name: 'Basketball',
+      price: 2095
+    };
+    product.price += 500;
+    product['delivery-time'] = '3 days';
+    console.log(product);
+
+    // Exercise 8d-8e
+    function comparePrice(product1, product2) {
+      if (product1.price < product2.price) {
+        return product1;
+      } else {
+        return product2;
+      }
+    }
+
+    function isSameProduct(product1, product2) {
+      if (product1.name === product2.name && product1.price === product2.price) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    const product1 = {
+      name: 'Basketball',
+      price: 2095
+    }
+
+    const product2 = {
+      name: 'Socks',
+      price: 1095
+    }
+
+    const product3 = {
+      name: 'Socks',
+      price: 1095
+    }
+    console.log(comparePrice(product1, product2));
+    console.log(isSameProduct(product1, product2));
+    console.log(isSameProduct(product1, product3));
+
+    // Exercise 8f
+    const text = 'Good Morning!';
+    const lowerText = text.toLowerCase();
+    console.log(lowerText);
+
+    // Exercise 8g
+    const str = "Test";
+    const repeatedStr = str.repeat(5);
+    console.log(repeatedStr);
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

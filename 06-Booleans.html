@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booleans</title>
+</head>
+
+<body>
+  <script>
+    /*
+      // Boolean 
+      console.log(typeof true);
+      console.log(3 < 5);
+      console.log(3 > 5);
+    
+      // Equal to
+      console.log(5 == '5');
+      console.log(5 === '5');
+      console.log(3 > 5 - 5);
+    
+      // If-statement
+      if (true) {
+        console.log('True');
+        } else {
+          console.log('False');
+        }
+    
+     // Example - substitute variable
+        const age = 15;
+        
+        if (age >= 16) {
+          console.log('You can drive.');
+        } else if (age >= 14) {
+          console.log('Almost there.')
+        } else {
+          console.log("You can't drive");
+        }
+    */
+
+    /*
+      // Truthy
+      if (5) {
+        console.log('truthy');
+      }
+      // Falsy
+      if (0) {
+        console.log('truthy');
+      }
+  
+      const cartQuantity = 5;
+      if (cartQuantity) {
+        console.log('cart has products.')
+      }
+      console.log(!0);
+      // NaN
+      console.log('text' / 5);
+      // undefined
+      let variable;
+      console.log(variable);
+    */
+
+    /*
+      // Ternary Operators
+      true? 'truthy': 'falsy';
+      const result = true? 'truthy': 'falsy';
+      console.log(result);
+  
+      const result1 = 0? 'truthy': 'falsy';
+      console.log(result1);
+  
+      // Guard Operators
+      const message = false && 'hello';
+      console.log(message);
+  
+      const message1 = 5 && 'hello';
+      console.log(message1);
+  
+      // Default Operators
+      const currency = 'EUR' || 'USD';
+      console.log(currency);
+  
+      const currency2 = undefined || 'USD';
+      console.log(currency2);
+    */
+
+    // Exercise 6a-6b-6c
+    let hour = '15';
+    let name = 'Irum'
+    if (hour >= 6 && hour <= 12) {
+      console.log(`Good Morning!${name}.`);
+    } else if (hour >= 13 && hour <= 17) {
+      console.log(`Good Afternoon!${name}.`);
+    } else {
+      console.log(`Good Night!${name}.`);
+    }
+
+    // Exercise 6d-6e
+    let age = '5';
+    let isHoliday = true;
+    if ((age <= 6 || age >= 65) && !isHoliday) {
+      console.log('Discount.');
+    } else {
+      console.log('No discount.');
+    }
+
+
+  </script>
+</body>
+
+</html>
