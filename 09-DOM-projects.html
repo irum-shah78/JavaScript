@@ -10,16 +10,29 @@
 </head>
 
 <body>
-   <!-- YT Subscribe Button Project -->
+  <!-- YT Subscribe Button Project -->
   <p> YouTube Subscribe Button</p>
   <button onclick="subscribeBtn()" class="js-btn">Subscribe</button>
 
   <!-- Amazon Shipping Calculator -->
-  <p></p>
+  <p> Amazon Shipping Calculator </p>
+  <input type="text" placeholder="Cost of Order" class="js-input" onkeydown="calculateTotal(event);">
+  <button onclick="calculateTotal();"> Calculate</button>
+  <p class="js-cost"></p>
 
 
+  <!-- Exercise 9a-9b-->
+   <button class="exercise-btn"> 9a </button>
+   <button onclick="exerciseBtn()" class="exercise-btn2"> 9b </button>
 
-  <script src="DOM-Projects.js"></script>
+   <!-- 9c -->
+   <button onclick="document.querySelector('.choice').innerHTML = 'You choose Heads!'"> Heads </button>
+   <button onclick="document.querySelector('.choice').innerHTML = 'You choose Tails!'"> Tails </button>
+   <p class="choice"></p>
+   
+
+
+  <script src="09-DOM-projects.js"></script>
 </body>
 
 </html>
