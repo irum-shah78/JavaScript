@@ -1,6 +1,6 @@
 // Amazon Shipping Calculator
 function handleCost(event){
-  if(event.key === 'Enetr'){
+  if(event.key === 'Enter'){
     calculateTotal();
   }
 }
@@ -38,4 +38,16 @@ exBtn.innerHTML = '9b Done!';
 } else {
   exBtn.innerHTML = '9b';
 }
+}
+
+// Exercise 9d-9e-9f
+function nameButton(){
+  const inputName = document.querySelector('.exercise-input');
+  document.querySelector('.name').innerHTML = `You Name is: ${inputName.value}`;
+}
+
+function showName(event){
+  if(event.key === 'Enter'){
+    nameButton();
+  }
 }
