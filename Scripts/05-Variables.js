@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Variables</title>
-
-<style>
-</style>
-</head>
-<body>
-
-  <p>Hello World!</p>
-  <!-- We will learn variables to create basic Cart functionality of our project. -->
-  <script>
-   let var1 = 3;
+let var1 = 3;
    console.log(var1);
 
    const calculation = 2 + 2;
@@ -50,9 +35,3 @@
 
   const totalCost = `${cost + tax}`;
   console.log(`Total cost: $${totalCost}`);
-
-
-  </script>
-
-</body>
-</html>

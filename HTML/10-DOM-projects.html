@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Projects</title>
+
+  <link rel="stylesheet" href="/Styles/10.DOM-Projects.css" >
+</head>
+
+<body>
+  <!-- YT Subscribe Button Project -->
+  <p> YouTube Subscribe Button</p>
+  <button onclick="subscribeBtn()" class="js-btn subs-btn">Subscribe</button>
+
+  <!-- Amazon Shipping Calculator -->
+  <p> Amazon Shipping Calculator </p>
+  <input type="text" placeholder="Cost of Order" class="js-input cost-input" onkeydown="handleCost(event);">
+  <button onclick="calculateTotal();" class="calc-btn"> Calculate</button>
+  <p class="js-cost"></p>
+
+  <script src="/Scripts/10-DOM-Projects.js"></script>
+</body>
+
+</html>
