@@ -11,39 +11,33 @@
 
   <button> Hello! </button>
   <button class="js-btn"> Second Button </button>
-  <script>
-    console.log(document.querySelector('button'));
-    // console.log(document.querySelector('body'));
-    console.log(document.querySelector('button').innerHTML);
-    document.querySelector('button').innerHTML = 'Changed!';
 
-    //console.log(document.querySelector('.js-btn'));
-    const btnElement = document.querySelector('.js-btn');
-    console.log(btnElement);
+  <!-- Exercise 9a-9b-->
+  <button class="exercise-btn"> 9a </button>
+  <button onclick="exerciseBtn()" class="exercise-btn2"> 9b </button>
+
+  <!-- 9c -->
+  <button onclick="document.querySelector('.choice').innerHTML = 'You choose Heads!'"> Heads </button>
+  <button onclick="document.querySelector('.choice').innerHTML = 'You choose Tails!'"> Tails </button>
+  <p class="choice"></p>
+
+  <!-- 9d-9e-9f -->
+  <input type="text" class="exercise-input" placeholder="Name" onkeydown="showName(event);">
+  <button onclick="nameButton()">Submit</button>
+  <p class="name"></p>
+  
+  <!-- 9g -->
+  <p> Amazon Shipping Calculator-Exercise </p>
+  <input type="text" placeholder="Cost" class="js-input-ex" onkeydown="exCost(event);">
+  <button onclick="exTotal();"> Calculate</button>
+  <p class="js-cost-ex"></p>
+
+  <!-- 9h -->
+  <input type="text" class="ex-keyup" placeholder="Type Something" onkeyup="checkKeyUp()">
+  <p class="ex-text"></p>
 
 
-
-
-
-
-
-    // Properties of DOM
-  /* console.log(document.title);
-     document.title = 'Changed';
- 
-     console.log(document.body);
-     console.log(typeof document.body);
- 
-     console.log(document.body.innerHTML);
-     document.body.innerHTML = 'Changed!';
- 
-     // we can also write the HTML Code in it:
-     document.body.innerHTML = '<button> Good Job! </button>'
- 
-     // document.body.innerHTML = 'Hello';
-     // document.title = 'Good Job!';
-  */
-  </script>
+  <script src="09-DOM.js"></script>
 </body>
 
 </html>
