@@ -16,7 +16,7 @@
 
   <!-- Amazon Shipping Calculator -->
   <p> Amazon Shipping Calculator </p>
-  <input type="text" placeholder="Cost of Order" class="js-input" onkeydown="calculateTotal(event);">
+  <input type="text" placeholder="Cost of Order" class="js-input" onkeydown="handleCost(event);">
   <button onclick="calculateTotal();"> Calculate</button>
   <p class="js-cost"></p>
 
@@ -31,11 +31,21 @@
    <p class="choice"></p>
 
    <!-- 9d-9e-9f -->
-   <input type="text" class="exercise-input" placeholder="Name" onkeydown="showName(event)">
+   <input type="text" class="exercise-input" placeholder="Name" onkeydown="showName(event);">
    <button onclick="nameButton()">Submit</button>
    <p class="name"></p>
    
+   <!-- 9g -->
+   <p> Amazon Shipping Calculator-Exercise </p>
+   <input type="text" placeholder="Cost" class="js-input-ex" onkeydown="exCost(event);">
+   <button onclick="exTotal();"> Calculate</button>
+   <p class="js-cost-ex"></p>
 
+   <!-- 9h -->
+   <input type="text" class="ex-keyup" placeholder="Type Something" onkeyup="checkKeyUp()">
+   <p class="ex-text"></p>
+
+  
 
   <script src="09-DOM-projects.js"></script>
 </body>
