@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10-Exercises</title>
+  <link rel="stylesheet" href="/Styles/10-Exercises.css">
+</head>
+
+<body>
+  <!-- Amazon button-10a -->
+  <button class="amazon-btn"> Add to Cart </button>
+
+  <!-- Uber Button-10b -->
+  <button class="req-btn"> Request Now </button>
+  <button class="sch-btn"> Schedule for later </button>
+
+  <!-- 10c -->
+  <button class="js-btn">Test</button>
+
+  <!-- 10d-10e-10f-10g -->
+  <button class="ex-btn gaming" onclick="addClass('.gaming')">Gaming</button>
+  <button class="ex-btn music" onclick="addClass('.music')">Music</button>
+  <button class="ex-btn tech" onclick="addClass('.tech')">Tech</button>
+
+  <!-- 10h -->
+  <p> Amazon Shipping Calculator </p>
+  <input type="text" placeholder="Cost of Order" class="js-input cost-input" onkeydown="handleCost(event);">
+  <button onclick="calculateTotal();" class="calc-btn"> Calculate</button>
+  <p class="js-cost"></p>
+  <p class="err-msg js-err-msg"></p>
+
+
+
+  <script src="/Scripts/10-Exercises.js"></script>
+
+</body>
+
+</html>
