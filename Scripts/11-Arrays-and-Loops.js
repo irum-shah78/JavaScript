@@ -216,3 +216,47 @@ function countWords(words) {
 }
 console.log(countWords(['apple', 'banana', 'orange', 'banana', 'apple', 'mango']));
 
+
+// Part 2 - Details about Arrays.
+const array1 = [1, 2, 3];
+const array2 = array1.slice();
+array2.push(4);
+console.log(array1);
+console.log(array2);
+
+const [firstValue, secondValue] = [1, 2, 3];
+
+for (let i = 0; i <= 10; i++) {
+  if (i % 3 === 0) {
+    continue;
+  }
+  console.log(i);
+  if (i === 8) {
+    break;
+  }
+}
+
+
+let index = 0;
+while (index <= 10) {
+  if (index % 3 === 0) {
+    index++;
+    continue;
+  }
+  console.log(index);
+  index++;
+}
+
+function doubleArray(Numbers) {
+  const numDouble = [];
+  for (let i = 0; i < Numbers.length; i++) {
+    const num = Numbers[i];
+    if (num === 0) {
+      return numDouble;
+    }
+    numDouble.push(num * 2);
+  }
+  return numDouble;
+}
+console.log(doubleArray([5, 6, 7, 0, 9]));
+console.log(doubleArray([1, 2, 3]));
