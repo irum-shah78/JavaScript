@@ -45,3 +45,19 @@ setTimeout(function(){
 }, 3000);
 
 console.log('Next Line.');
+
+setInterval(function(){
+  console.log('Interval');
+}, 3000);
+
+console.log('Next Line 2');
+
+
+// Another way to loop through an array. Through forEach() method. 
+['Make Dinner', 'Wash Dishes', 'Watch TV'].forEach(function (value, index) {
+  if (value === 'Wash Dishes') {
+    return;
+  }
+  console.log(index);
+  console.log(value);
+});
